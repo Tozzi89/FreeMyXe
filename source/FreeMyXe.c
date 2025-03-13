@@ -27,6 +27,66 @@ LocalisationMessages_t spanish = {
     L"El hipervisor y el kernel han sido parcheados!\n\nLa clave de tu CPU es:\n%S\n\nC\u00F3digo fuente de FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nDivi\u00E9rtete!"
 };
 
+// translation provided by needmorepaper
+LocalisationMessages_t canadian_french = {
+    L"Je vais commencer \u00E0 corriger l'hyperviseur et le noyau...\n\nVotre cl\u00E9 de l'unit\u00E9 centrale est :\n%S\n\n\u00C9crivez \u00E7a sur quelque chose et prot\u00E9gez-la!",
+    L"D'accord",
+    L"Bravo !",
+    L"D\u00E9marrer XeLL au lieu de FreeMyXe",
+    L"On \u00E9choue \u00E0 d\u00E9marrer XeLL ?! Bon, de toute fa\u00E7on je vais corriger l'hyperviseur et le noyau...",
+    L"L'hyperviseur et le noyau sont corrig\u00E9s!\n\nVotre cl\u00E9 de l'unit\u00E9 centrale est :\n%S\n\nLe code source pour FreeMyXe :\ngithub.com/InvoxiPlayGames/FreeMyXe\n\n"
+};
+
+// translation provided by Xyozus
+LocalisationMessages_t brazilian_portuguese = {
+    L"Prestes a come\u00E7ar a aplicar patches no HV e no Kernel...\n\nSua chave de CPU \u00E9:\n%S\n\nEscreva isso e guarde em algum lugar seguro!",
+    L"OK",
+    L"De acordo!",
+    L"Inicie o XeLL em vez disso",
+    L"Falha ao iniciar o XeLL?! Ah, bem, vou corrigir o HV e o Kernel de qualquer maneira...",
+    L"O Hipervisor e o Kernel foram corrigidos!\n\nSua chave de CPU \u00E9:\n%S\n\nC\u00F3digo fonte para FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nAproveite!"
+};
+
+// translation provided by Animadoria
+LocalisationMessages_t portuguese = {
+    L"Prestes a come\u00E7ar a fazer o patch do HV e do kernel...\n\nA chave do seu CPU \u00E9:\n%S\n\nEscreva e guarde isto num lugar seguro!",
+    L"OK",
+    L"Boa!",
+    L"Iniciar XeLL em vez disso",
+    L"Erro ao iniciar XeLL?! Bem, vou corrigir o HV e o kernel de qualquer forma...",
+    L"Hypervisor e kernel foram corrigidos!\n\nA chave do seu CPU \u00E9:\n%S\n\nC\u00F3digo fonte para o FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nDivirta-se!"
+};
+
+// translation provided by tuxuser
+LocalisationMessages_t german = {
+    L"Starte nun patchen des HV und Kernels...\n\nDer CPU Key ist:\n%S\n\nBewahre ihn sicher auf!",
+    L"OK",
+    L"Yup!",
+    L"Stattdessen XeLL starten",
+    L"XeLL starten fehlgeschlagen?! Hmmm, ich patche trotzdem nun HV und Kernel ...",
+    L"Hypervisor und Kernel wurden gepatcht!\n\nDer CPU Key ist:\n%S\n\nSource code von FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nViel Spa\u00DF!"
+};
+
+// translation provided by eversiege and veselcraft
+LocalisationMessages_t russian = {
+    L"\u041D\u0430\u0447\u0438\u043D\u0430\u0435\u043C \u043F\u0430\u0442\u0447\u0438\u0442\u044C HV \u0438 \u044F\u0434\u0440\u043E...\n\n\u0412\u0430\u0448 \u043A\u043B\u044E\u0447 CPU:\n%S\n\n\u0417\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u0435\u0433\u043E \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0432 \u043D\u0430\u0434\u0451\u0436\u043D\u043E\u043C \u043C\u0435\u0441\u0442\u0435!",
+    L"OK",
+    L"\u0423\u0440\u0430!",
+    L"\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C XeLL",
+    L"\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043F\u0443\u0442\u0438\u0442\u044C XeLL?! \u041D\u0443 \u0447\u0442\u043E \u0436, \u0432\u0441\u0451 \u0440\u0430\u0432\u043D\u043E \u043F\u0430\u0442\u0447\u0438\u043C HV \u0438 \u044F\u0434\u0440\u043E...",
+    L"\u0413\u0438\u043F\u0435\u0440\u0432\u0438\u0437\u043E\u0440 \u0438 \u044F\u0434\u0440\u043E \u0431\u044B\u043B\u0438 \u043F\u0440\u043E\u043F\u0430\u0442\u0447\u0435\u043D\u044B!\n\n\u0412\u0430\u0448 \u043A\u043B\u044E\u0447 CPU:\n%S\n\n\u0418\u0441\u0445\u043E\u0434\u043D\u044B\u0439 \u043A\u043E\u0434 \u0434\u043B\u044F FreeMyXe \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0442\u0443\u0442:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\n\u0412\u0435\u0441\u0435\u043B\u0438\u0442\u0435\u0441\u044C!"
+};
+
+// translation provided by Helloyunho
+LocalisationMessages_t korean = {
+    L"\uD558\uC774\uD37C\uBC14\uC774\uC800\uC640 \uCEE4\uB110 \uD328\uCE58 \uC900\uBE44\uC911...\n\nCPU \uD0A4:\n%S\n\n\uC548\uC804\uD55C\u \uACF3\uC5D0 \uC801\uC5B4\uB450\uC138\uC694!",
+    L"\uD655\uC778",
+    L"\uC608\uC774!",
+    L"XeLL \uC2E4\uD589\uD558\uAE30",
+    L"XeLL\uC744 \uC2E4\uD589\uD558\uB294\uB370 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4?! \uBB50, \uC81C\uAC00 \uC9C1\uC811 \uD558\uC774\uD37C\uBC14\uC774\uC800\uC640 \uCEE4\uB110\uC744 \uD328\uCE58\uD560\uAC8C\uC694...",
+    L"\uD558\uC774\uD37C\uBC14\uC774\uC800\uC640 \uCEE4\uB110\uC774 \uD328\uCE58\uB418\uC5C8\uC2B5\uB2C8\uB2E4!\n\nCPU \uD0A4:\n%S\n\nFreeMyXe \uC18C\uC2A4 \uCF54\uB4DC:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\n\uC88B\uC740 \uD558\uB8E8 \uB418\uC138\uC694!"
+};
+
 LocalisationMessages_t *currentLocalisation = &english;
 
 static LPWSTR buttons[1] = {L"OK"};
@@ -144,10 +204,17 @@ void LaunchXell()
     int xell_file = FSOpenFile("GAME:\\xell-1f.bin");
     int xell_filesize = 0;
     int xell_bytesread = 0;
+    int xell_2f = 0;
     // check for glitch xell
     if (xell_file == -1)
     {
         xell_file = FSOpenFile("GAME:\\xell-gggggg.bin");
+    }
+    // check for 2f xell
+    if (xell_file == -1)
+    {
+        xell_file = FSOpenFile("GAME:\\xell-2f.bin");
+        xell_2f = 1;
     }
     // if we don't have either then fail, we shouldn't have gotten here
     if (xell_file == -1)
@@ -170,7 +237,10 @@ void LaunchXell()
         return;
     }
     // attempt to launch XeLL
-    HypervisorExecute(0x800000001c000000, xell_buffer, sizeof(xell_buffer));
+    if (xell_2f)
+        HypervisorExecute(0x800000001c040000, xell_buffer, sizeof(xell_buffer));
+    else
+        HypervisorExecute(0x800000001c000000, xell_buffer, sizeof(xell_buffer));
 }
 
 uint64_t returnTrue = (((uint64_t)LI(3, 1)) << 32) | (BLR);
@@ -211,7 +281,7 @@ void __cdecl main()
     sprintf(cpu_key_string, "%08X%08X%08X%08X", *(uint32_t *)(cpu_key + 0x0), *(uint32_t *)(cpu_key + 0x4), *(uint32_t *)(cpu_key + 0x8), *(uint32_t *)(cpu_key + 0xC));
 
     // check if we have a xell file
-    has_xell = FSFileExists("GAME:\\xell-1f.bin") || FSFileExists("GAME:\\xell-gggggg.bin");
+    has_xell = FSFileExists("GAME:\\xell-1f.bin") || FSFileExists("GAME:\\xell-gggggg.bin") || FSFileExists("GAME:\\xell-2f.bin");
 
     DbgPrint("CPU key: %s\n", cpu_key_string);
 
@@ -222,6 +292,24 @@ void __cdecl main()
             break;
         case XC_LANGUAGE_SPANISH:
             currentLocalisation = &spanish;
+            break;
+        case XC_LANGUAGE_GERMAN:
+            currentLocalisation = &german;
+            break;
+        case XC_LANGUAGE_FRENCH: // would be nice to get fr-FR ong
+            currentLocalisation = &canadian_french;
+            break;
+        case XC_LANGUAGE_RUSSIAN:
+            currentLocalisation = &russian;
+            break;
+        case XC_LANGUAGE_KOREAN:
+            currentLocalisation = &korean;
+            break;
+        case XC_LANGUAGE_PORTUGUESE:
+            if (XGetLocale() == XC_LOCALE_BRAZIL)
+                currentLocalisation = &brazilian_portuguese;
+            else
+                currentLocalisation = &portuguese;
             break;
         default:
             currentLocalisation = &english;

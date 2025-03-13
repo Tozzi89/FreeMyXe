@@ -33,7 +33,8 @@ for some.
 * Allows more homebrew be able to be launched without erroring back to
   dashboard.
 * Fixes the ring of light / controller syncing bug after using BadUpdate.
-* Allows launching `xell-1f.bin` from the payload folder.
+* Allows launching XeLL if you have `xell-1f.bin` in the
+  BadUpdatePayload folder.
 * Patches USB controller authentication check (a-la "UsbdSecPatch") to let
   certain compatible controllers and adapters work. That's for you, Mario.
 
@@ -51,3 +52,13 @@ for some.
 * RGLoader
 
 (let me know if I got anything wrong!)
+
+### Translations
+
+* Spanish - by [lexd0g](https://github.com/lexd0g)
+* French (CA) - by [needsmorepaper](https://github.com/needsmorepaper)
+* Portuguese (PT) - by [Animadoria](https://github.com/Animadoria)
+* Portuguese (BR) - by [Xyozus](https://github.com/Xyozus)
+* German - by [tuxuser](https://github.com/tuxuser)
+* Russian - by [eversiege](https://github.com/eversiege) and [veselcraft](https://github.com/veselcraft)
+* Korean - by [Helloyunho](https://github.com/Helloyunho)
