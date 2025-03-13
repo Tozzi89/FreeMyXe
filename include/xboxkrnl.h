@@ -9,3 +9,4 @@ extern unsigned int XexGetProcedureAddress(HANDLE hand, DWORD dwOrdinal, PVOID A
 extern unsigned int XexLoadImage(LPCSTR szXexName, DWORD dwModuleTypeFlags, DWORD dwMinimumVersion, PHANDLE pHandle);
 extern void HalSendSMCMessage(LPVOID pCommandBuffer, LPVOID pRecvBuffer);
 extern void KeSweepIcacheRange(PVOID Address, DWORD cbBytes);
+extern void KeFlushEntireTb();

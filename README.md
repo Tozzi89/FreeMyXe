@@ -3,8 +3,9 @@
 by Emma / InvoxiPlayGames
 
 Xbox 360 executable designed to apply freedom-unlocking patches from xeBuild
-to the kernel and hypervisor at runtime. For use with
-[Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate).
+to the kernel and hypervisor at runtime. For use with Grimdoomer's
+[Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) hypervisor
+exploit.
 
 Nowhere near finished or ready or stable or anything, but might be good enough
 for some.
@@ -33,14 +34,23 @@ for some.
 * Allows more homebrew be able to be launched without erroring back to
   dashboard.
 * Fixes the ring of light / controller syncing bug after using BadUpdate.
-* Allows launching XeLL if you have `xell-1f.bin` in the
-  BadUpdatePayload folder.
+* Patches the <30ms ping check for System Link.
+* Allows launching XeLL if you have `xell-1f.bin`, `xell-2f.bin` or 
+  `xell-gggggg.bin` in the BadUpdatePayload folder.
 * Patches USB controller authentication check (a-la "UsbdSecPatch") to let
   certain compatible controllers and adapters work. That's for you, Mario.
+* (**beta4 and above only**) Disables connecting to Xbox Live. *You **MUST**
+  still disconnect before you start running the exploit!*
+
+### Original Xbox support
+
+The patches made by FreeMyXe are not fully compatible with running Original Xbox
+games. Before starting any Original Xbox title, you **must** launch
+"OGXboxPrep.xex" first, and after you're done you must launch it again.
+This is included in FreeMyXe beta4 and above.
 
 ## TODO
 
-* Actual patch loader
 * Daaaashlaaaaaaunch?
 
 ## Credits
@@ -51,14 +61,20 @@ for some.
   https://www.xbins.org/nfo.php?file=xboxnfo2431.nfo)
 * RGLoader
 
+Greets to the Free60 project!
+
 (let me know if I got anything wrong!)
 
 ### Translations
 
+Thank you to everyone who helped translate FreeMyXe!
+
 * Spanish - by [lexd0g](https://github.com/lexd0g)
-* French (CA) - by [needsmorepaper](https://github.com/needsmorepaper)
-* Portuguese (PT) - by [Animadoria](https://github.com/Animadoria)
-* Portuguese (BR) - by [Xyozus](https://github.com/Xyozus)
+* French (Canadian) - by [needsmorepaper](https://github.com/needsmorepaper)
+* Portuguese (Portugal) - by [Animadoria](https://github.com/Animadoria)
+* Portuguese (Brazilian) - by [Xyozus](https://github.com/Xyozus)
 * German - by [tuxuser](https://github.com/tuxuser)
+* Polish - by [chackAJMCPE](https://github.com/chackAJMCPE) and [DoruDoLasu](https://github.com/DoruDoLasu)
 * Russian - by [eversiege](https://github.com/eversiege) and [veselcraft](https://github.com/veselcraft)
 * Korean - by [Helloyunho](https://github.com/Helloyunho)
+* Chinese (Simplified) - by [Mez0ne](https://github.com/Mez0ne)

@@ -37,6 +37,16 @@ LocalisationMessages_t canadian_french = {
     L"L'hyperviseur et le noyau sont corrig\u00E9s!\n\nVotre cl\u00E9 de l'unit\u00E9 centrale est :\n%S\n\nLe code source pour FreeMyXe :\ngithub.com/InvoxiPlayGames/FreeMyXe\n\n"
 };
 
+// translation provided by chackAJMCPE and DoruDoLasu
+LocalisationMessages_t polish = {
+    L"Konsola gotowa na \u0142atanie HV i j\u0105dra...\n\nTw\u00f3j klucz CPU to:\n%S\n\nZapisz go gdzie\u015b i trzymaj w bezpiecznym miejscu!",
+    L"OK",
+    L"Jupii!!",
+    L"Zamiast tego uruchom XeLL",
+    L"XeLL nie wystartowa\u0142?! No trudno, w takim razie za\u0142atamy HV i j\u0105dro...",
+    L"Hiperwizor i j\u0105dro zosta\u0142y za\u0142atane!\n\nTw\u00f3j klucz CPU to:\n%S\n\nKod \u017ar\u00f3d\u0142owy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nMi\u0142ej zabawy!"
+};
+
 // translation provided by Xyozus
 LocalisationMessages_t brazilian_portuguese = {
     L"Prestes a come\u00E7ar a aplicar patches no HV e no Kernel...\n\nSua chave de CPU \u00E9:\n%S\n\nEscreva isso e guarde em algum lugar seguro!",
@@ -85,6 +95,16 @@ LocalisationMessages_t korean = {
     L"XeLL \uC2E4\uD589\uD558\uAE30",
     L"XeLL\uC744 \uC2E4\uD589\uD558\uB294\uB370 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4?! \uBB50, \uC81C\uAC00 \uC9C1\uC811 \uD558\uC774\uD37C\uBC14\uC774\uC800\uC640 \uCEE4\uB110\uC744 \uD328\uCE58\uD560\uAC8C\uC694...",
     L"\uD558\uC774\uD37C\uBC14\uC774\uC800\uC640 \uCEE4\uB110\uC774 \uD328\uCE58\uB418\uC5C8\uC2B5\uB2C8\uB2E4!\n\nCPU \uD0A4:\n%S\n\nFreeMyXe \uC18C\uC2A4 \uCF54\uB4DC:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\n\uC88B\uC740 \uD558\uB8E8 \uB418\uC138\uC694!"
+};
+
+// translation provided by Mez0ne
+LocalisationMessages_t chinese_simplified = {
+    L"\u5373\u5C06\u5F00\u59CB\u4FEE\u8865 Hypervisor \u548C\u5185\u6838...\n\n\u4F60\u7684 CPU \u5BC6\u94A5\u662F\uFF1A\n%S\n\n\u628A\u5B83\u8BB0\u4E0B\u6765\u5E76\u59A5\u5584\u4FDD\u7BA1\uFF01",
+    L"OK",
+    L"\u8036\uFF01",
+    L"\u542F\u52A8 XeLL",
+    L"\u672A\u80FD\u542F\u52A8 XeLL\uFF1F\uFF01\u597D\u5427\uFF0C\u4E0D\u7BA1\u600E\u6837\uFF0C\u6211\u90FD\u4F1A\u4FEE\u8865 Hypervisor \u548C\u5185\u6838...",
+    L"Hypervisor \u548C\u5185\u6838\u5DF2\u88AB\u4FEE\u8865\uFF01\n\n\u4F60\u7684 CPU \u5BC6\u94A5\u662F\uFF1A\n%S\n\nFreeMyXe \u7684\u6E90\u4EE3\u7801\uFF1A\ngithub.com/InvoxiPlayGames/FreeMyXe\n\n\u73A9\u5F97\u5F00\u5FC3\uFF01"
 };
 
 LocalisationMessages_t *currentLocalisation = &english;
@@ -299,6 +319,9 @@ void __cdecl main()
         case XC_LANGUAGE_FRENCH: // would be nice to get fr-FR ong
             currentLocalisation = &canadian_french;
             break;
+        case XC_LANGUAGE_POLISH:
+            currentLocalisation = &polish;
+            break;
         case XC_LANGUAGE_RUSSIAN:
             currentLocalisation = &russian;
             break;
@@ -310,6 +333,9 @@ void __cdecl main()
                 currentLocalisation = &brazilian_portuguese;
             else
                 currentLocalisation = &portuguese;
+            break;
+        case XC_LANGUAGE_SCHINESE:
+            currentLocalisation = &chinese_simplified;
             break;
         default:
             currentLocalisation = &english;
@@ -489,11 +515,33 @@ void __cdecl main()
         HypervisorClearCache(MmGetPhysicalAddress(pdwFunction));
     }
 
+    // flush the tlb so we can write to data segments now
+    KeFlushEntireTb();
+
+    DbgPrint("Applying XAM patches...\n");
+
+    Sleep(50);
+    
+    // block xbox live by poking these domains to something that'll never be real
+    strcpy((void *)(0x815ff238), "XEXDS.XBOX.INVALID");
+    strcpy((void *)(0x815ff250), "XETGS.XBOX.INVALID");
+    strcpy((void *)(0x815ff268), "XEAS.XBOX.INVALID");
+    strcpy((void *)(0x815ff27c), "XEMACS.XBOX.INVALID");
+
+    // patch calls to XexCheckExecutablePrivilege(6) to allow insecure sockets everywhere
+    POKE_32(0x817450d4, LI(3, 1));
+    POKE_32(0x8174c174, LI(3, 1));
+    POKE_32(0x81774590, LI(3, 1));
+    POKE_32(0x81810084, LI(3, 1));
+
+    // syslink ping patch - 30ms check in CXnIp::IpRecvKeyExXbToXb
+    POKE_32(0x81754230, NOP);
+ 
     //ApplyXeBuildPatches(xebuild_17559_hvkern_patchset);
     
     DbgPrint("Done\n");
 
-    Sleep(500);
+    Sleep(450);
 
     buttons[0] = currentLocalisation->yay;
     wsprintfW(dialog_text_buffer, currentLocalisation->patch_successful, cpu_key_string);
