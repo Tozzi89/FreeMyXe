@@ -23,6 +23,8 @@ for some.
 > Completely disconnect from Xbox Live and the internet before running BadUpdate
 > and do NOT reconnect, and do NOT run homebrew with an Xbox Live-enabled profile.
 > **You could risk a ban!**
+> I am not responsible for any Xbox Live console bans or account bans caused by
+> using FreeMyXe.
 
 ## Features
 
@@ -70,7 +72,7 @@ Greets to the Free60 project!
 Thank you to everyone who helped translate FreeMyXe!
 
 * Spanish - by [lexd0g](https://github.com/lexd0g)
-* French (Canadian) - by [needsmorepaper](https://github.com/needsmorepaper)
+* French (Canadian) - by [needmorepaper](https://github.com/needmorepaper)
 * Portuguese (Portugal) - by [Animadoria](https://github.com/Animadoria)
 * Portuguese (Brazilian) - by [Xyozus](https://github.com/Xyozus)
 * German - by [tuxuser](https://github.com/tuxuser)
