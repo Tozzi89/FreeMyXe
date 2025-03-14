@@ -1,7 +1,5 @@
 # FreeMyXe
 
-by Emma / InvoxiPlayGames
-
 Xbox 360 executable designed to apply freedom-unlocking patches from xeBuild
 to the kernel and hypervisor at runtime. For use with Grimdoomer's
 [Xbox360BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) hypervisor
@@ -52,11 +50,11 @@ games. Before starting any Original Xbox title, you **must** launch
 must launch it again to make some 360 homebrew work again. This is included in
 FreeMyXe beta4 and above.
 
-## TODO
+## Developers and Contributors
 
-* Daaaashlaaaaaaunch?
+* [Emma / InvoxiPlayGames](https://github.com/InvoxiPlayGames) - lead developer
 
-## Credits
+## Credits and Shoutouts
 
 * ikari's original freeBOOT
 * cOz et al. for xeBuild 17559 patches and Dashlaunch

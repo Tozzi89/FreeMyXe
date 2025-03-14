@@ -1,3 +1,9 @@
+/*
+    hv_funcs.c
+    from the FreeMyXe project
+    https://github.com/FreeMyXe/FreeMyXe
+*/
+
 #include <xtl.h>
 #include <stdint.h>
 #include "xboxkrnl.h"

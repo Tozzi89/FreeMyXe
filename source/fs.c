@@ -1,3 +1,9 @@
+/*
+    fs.c
+    from the FreeMyXe project
+    https://github.com/FreeMyXe/FreeMyXe
+*/
+
 #include <xtl.h>
 #include <stdio.h>
 
