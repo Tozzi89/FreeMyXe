@@ -17,7 +17,7 @@ for some.
 > [!CAUTION]
 > **DO NOT** run any homebrew that modifies any file on or installs anything to
 > the NAND, and **DO NOT** try to flash a modified NAND. **YOU WILL BRICK YOUR
-> CONSOLE!**
+> CONSOLE!** I am not responsible for any damage you cause to your own hardware.
 
 > [!WARNING] 
 > Completely disconnect from Xbox Live and the internet before running BadUpdate
@@ -48,8 +48,9 @@ for some.
 
 The patches made by FreeMyXe are not fully compatible with running Original Xbox
 games. Before starting any Original Xbox title, you **must** launch
-"OGXboxPrep.xex" first, and after you're done you must launch it again.
-This is included in FreeMyXe beta4 and above.
+"OGXboxPrep.xex" first, and after you're done playing Original Xbox games, you
+must launch it again to make some 360 homebrew work again. This is included in
+FreeMyXe beta4 and above.
 
 ## TODO
 
@@ -62,8 +63,10 @@ This is included in FreeMyXe beta4 and above.
   (see also https://www.xbins.org/nfo.php?file=xboxnfo2430.nfo,
   https://www.xbins.org/nfo.php?file=xboxnfo2431.nfo)
 * RGLoader
-
-Greets to the Free60 project!
+* Free60 project for [libxenon](https://github.com/Free60Project/libxenon) and
+  [XeLL Reloaded](https://github.com/Free60Project/xell-reloaded).
+* Octal450 and DrTrinity for an updated Winchester-compatible
+  [XeLL](https://github.com/Octal450/xell-reloaded).
 
 (let me know if I got anything wrong!)
 
