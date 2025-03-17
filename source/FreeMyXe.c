@@ -33,6 +33,16 @@ LocalisationMessages_t spanish = {
     L"El hipervisor y el kernel han sido parcheados!\n\nLa clave de tu CPU es:\n%S\n\nC\u00F3digo fuente de FreeMyXe:\ngithub.com/FreeMyXe/FreeMyXe\n\nDivi\u00E9rtete!"
 };
 
+// translation provided by Tozzi89
+LocalisationMessages_t swedish = {
+    L"Snart b\u00F6rjar patchning av hypervisor och k\u00E4rnan...\n\nDin CPU nyckel \u00E4r:\n%S\n\nSkriv ner och spara p\u00E5 s\u00E4kert st\u00E4lle!",
+    L"OK",
+    L"Jippi!!",
+    L"Starta XeLL ist\u00E4llet",
+    L"Kunde inte starta XeLL?! Vi tar och patchar hypervisor och k\u00E4rnan \u00E4nd\u00E5...",
+    L"Hypervisor och k\u00E4rnan har blivit patchad!\n\nDin CPU nyckel \u00E4r:\n%S\n\nK\u00E4llkoden f\u00F6r FreeMyXe:\ngithub.com/FreeMyXe/FreeMyXe\n\nHa s\u00E5 kul!"
+};
+
 // translation provided by needmorepaper
 LocalisationMessages_t canadian_french = {
     L"Je vais commencer \u00E0 corriger l'hyperviseur et le noyau...\n\nVotre cl\u00E9 de l'unit\u00E9 centrale est :\n%S\n\n\u00C9crivez \u00E7a sur quelque chose et prot\u00E9gez-la!",
