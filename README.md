@@ -73,6 +73,7 @@ FreeMyXe beta4 and above.
 Thank you to everyone who helped translate FreeMyXe!
 
 * Spanish - by [lexd0g](https://github.com/lexd0g)
+* Swedish - by [Tozzi89](https://github.com/Tozzi89)
 * French (Canadian) - by [needmorepaper](https://github.com/needmorepaper)
 * Portuguese (Portugal) - by [Animadoria](https://github.com/Animadoria)
 * Portuguese (Brazilian) - by [Xyozus](https://github.com/Xyozus)
