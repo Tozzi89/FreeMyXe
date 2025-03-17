@@ -329,6 +329,9 @@ void __cdecl main()
         case XC_LANGUAGE_SPANISH:
             currentLocalisation = &spanish;
             break;
+        case XC_LANGUAGE_SWEDISH:
+            currentLocalisation = &swedish;
+            break;
         case XC_LANGUAGE_GERMAN:
             currentLocalisation = &german;
             break;
